@@ -1,0 +1,16 @@
+header{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Shrikhand', cursive;
+  img{
+      width: 45%;
+      height: 45%;
+      object-fit: contain;
+  }
+  a {
+    position: absolute;
+    left: 30px;
+  }
+}

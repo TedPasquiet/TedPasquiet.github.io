@@ -1,0 +1,21 @@
+.LocationChoice{
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    i{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    input{
+        width: 150px;
+        font-size: 16px;
+        font-weight: 800;
+        border: hidden;
+        background-color: inherit;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
