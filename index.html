@@ -1,135 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/SCSS/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/logo/ohmyfood@2x.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/98aef6a98e.js" crossorigin="anonymous" defer></script>
-    <title>Ted_Pasquiet_P3_DW</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Devenez attractif et visibiles sur internet avec la panthère avec un site sur mesure!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js" defer></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNR0714ZEF"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-QNR0714ZEF');
+	</script>
+
+    <title>La Panthère meilleure agence de Webdesign sur Lyon!</title>
+
+    
+<!-- Analytics -->
+<meta name="google-site-verification" content="LNiwdvwOE7J6G1goSouEiHif8_7FpiBdTGhVlZRwdYw" />
+<meta name=" robots" content=" index, follow"/> 
+<!-- Analytics END -->
+    
 </head>
 <body>
-    <div class="Loader">
-        <div class="Loader1">O</div>
-        <div class="Loader2">H</div>
-        <div class="Loader3">M</div>
-        <div class="Loader4">Y</div>
-        <div class="Loader5">F</div>
-        <div class="Loader6">O</div>
-        <div class="Loader7">O</div>
-        <div class="Loader8">D</div>
-    </div>
-    <header>
-        <img src="assets/images/logo/ohmyfood.png" alt="Ohmyfoodlogo">     
-    </header>
-    <main>
-        <nav>
-            <div class="LocationChoice">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" id="Location" name="Location" placeholder="Paris, Belleville">
-            </div>
-            <div class="IntroExplore">
-                <p>Réservez le menu qui vous convient</p>
-                <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
-                <a href="#" class="PinkBtn">Explorer nos restaurants</a>
-            </div>
-            <div class="NavMenu">
-                <h1>Fonctionnement</h1>
-                <ul class="NavMenuList">
-                    <li class="NavMenuChoice">
-                        <p class="NavMenuNumber">1</p>
-                        <i class="fas fa-mobile-alt operation__steps--icon"></i>
-                        <p>Choisissez un restaurant</p>
-                    </li>
-                    <li class="NavMenuChoice">
-                        <p class="NavMenuNumber">2</p>
-                        <i class="fas fa-list-ul operation__steps--icon"></i>
-                        <p>Composez votre menu</p>
-                    </li>
-                    <li class="NavMenuChoice">
-                        <p class="NavMenuNumber">3</p>
-                        <i class="fas fa-store operation__steps--icon"></i>
-                        <p>Dégustez au restaurant</p>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="Restaurant">
-            <p>Restaurants</p>
-            <div class="RestaurantList">
-                <a class="RestaurantChoice" href="pages/lapalettedugout.html">
-                    <div class="RestaurantChoiceImage">
-                        <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout restaurant">
-                        <p>Nouveau</p>
-                    </div>
-                    <div class="RestaurantChoiceSelection">
-                        <div class="RestaurantChoiceSelectionText">
-                            <p>La palette du goût</p>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <div class="RestaurantChoiceSelectionHeart">
-                        <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x fill"></i>
-                        </div>
-                    </div>
-                </a>
-                <a class="RestaurantChoice" href="pages/lanoteenchantee.html">
-                    <div class="RestaurantChoiceImage">
-                        <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantee restaurant">
-                        <p>Nouveau</p>
-                    </div>
-                    <div class="RestaurantChoiceSelection">
-                        <div class="RestaurantChoiceSelectionText">
-                            <p>La note enchantée</p>
-                            <p>Charonne</p>
-                        </div>
-                        <div class="RestaurantChoiceSelectionHeart">
-                        <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x fill"></i>
-                        </div>
-                    </div>
-                </a>
-                <a class="RestaurantChoice" href="pages/aLaFrancaise.html">
-                    <div class="RestaurantChoiceImage">
-                        <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la francaise restaurant">
-                    </div>
-                    <div class="RestaurantChoiceSelection">
-                        <div class="RestaurantChoiceSelectionText">
-                            <p>À la française</p>
-                            <p>Cité Rouge</p>
-                        </div>
-                        <div class="RestaurantChoiceSelectionHeart">
-                        <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x fill"></i>
-                        </div>
-                    </div>
-                </a>
-                <a class="RestaurantChoice" href="pages/ledelicedessens.html">
-                    <div class="RestaurantChoiceImage">
-                        <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le delice des sens restaurant">
-                    </div>
-                    <div class="RestaurantChoiceSelection">
-                        <div class="RestaurantChoiceSelectionText">
-                            <p>Le délice des sens</p>
-                            <p>Folie-Méricourt</p>
-                        </div>
-                        <div class="RestaurantChoiceSelectionHeart">
-                        <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x fill"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <footer>
-            <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-            <ul>
-                <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
-            </ul>
-        </footer>
-    </main>
+<!-- Principal conteneur -->
+<div class="page-container">
     
+<!-- bloc-0 -->
+<nav class="bloc bgc-white l-bloc " id="bloc-0">
+	<div class="container bloc-sm">
+		<div class="navbar row">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/agence-la-panthere-monochrome.svg" alt="Web design lyon logo agence la panthère" height="40" />
+				</a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a href="index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="Contact.html">Contactez-nous!</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- bloc-0 END -->
+
+<!-- bloc-1-presentation -->
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+	<div class="container bloc-lg">
+		<div class="row tight-width-whitespace">
+			<div class="col-sm-12">
+				<img src="img/logo.webp" class="center-block image-resize-mode" width="100" alt="Agence La Panthère, agence web paris, création logo paris" height="90" />
+				<h1 class="text-center hero-bloc-text tc-white ">
+					La Panthère<br> Agence web design Lyon
+				</h1>
+				<div class="text-center">
+					<a href="Contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- bloc-1-presentation END -->
+
+<!-- bloc-2-services -->
+<section class="bloc bgc-white l-bloc" id="bloc-2-services">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<H2><em>L'agence La Panthère</em> est une agence de <em>web design</em> qui aide les entreprises à devenir <em>attractives et visibles</em> sur Internet</H2>
+			</div>
+		</div>
+		<div class="row voffset-lg med-width-whitespace">
+			<div class="col-sm-4">
+				<div class="text-center">
+					<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+				</div>
+				<h3 class="mg-md text-center">
+					Web design
+				</h3>
+				<p class="text-center ">
+					Que vous ayez un <em>site web</em> qui a besoin d'un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un <em>design</em> dont vous serez fier.
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<div class="text-center">
+					<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+				</div>
+				<h3 class="mg-md text-center">
+					Stratégie
+				</h3>
+				<p class="text-center ">
+					Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos <em>objectifs commerciaux</em> afin de vous proposer le <em>meilleur design</em> possible.<br>
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<div class="text-center">
+					<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+				</div>
+				<h3 class="mg-md text-center">
+					Illustrations
+				</h3>
+				<p class="text-center ">
+					Un bon design n'est rien sans de bonnes <em>illustrations</em>. Laissez faire notre équipe de <em>graphistes</em> talentueux pour donner à vos pages une touche finale d'élégance.
+				</p>
+			</div>
+		</div>
+		<div class="row voffset-lg voffset">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+				<q><em>L'agence La Panthère</em> est une <em>excellente agence web</em>! Les <em>web designers</em> ont réussi à capturer l'essence de notre entreprises et à l'intégrer à notre site. Cela nous a aidé à doubler nos <em>ventes en ligne</em> à <em>Lyon</em></q>
+				<br>
+				<br>
+				<p>Maxime Guibard, PDG de A vos fourchettes</p>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- bloc-2-services END -->
+
+<!-- bloc-3-what-i-do -->
+<section class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
+	<div class="container bloc-lg">
+		<div class="row tight-width-whitespace black-background">
+			<div class="col-sm-12">
+				<h2 class="mg-md text-center tc-white">
+					Nous souhaitons aider les <em> entreprises</em> de la <em> région Lyonnaise</em> à se développer et à connaître le <em>succès</em>. Nous travaillons pour aider les <em> entreprises locales</em> à attirer de <em> nouveaux clients</em> .<br>
+				</h2>
+				<p class="text-center white">
+					Nous aimons collaborer avec des <em>entrepreneurs créatifs</em> et des <em>entreprises locale</em>, qu’elles aient besoin de <em>créer un site de A à Z </em>ou de <em>donner un coup de jeune à leur site</em>. Que vous ayez besoin d’une <em>identité visuelle</em> complète ou d’une <em>refonte de votre site</em>, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour <em>créer des sites</em> beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br>
+					<a class="ltc-white bold-link" href="Contact.html">Contactez notre équipe</a><br>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- bloc-3-what-i-do END -->
+
+<!-- bloc-4-portfolio -->
+<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<p>Nous travaillons avec beaucoup de clients, voici nos réalisations</p>
+			</div>
+		</div>
+		<div class="row tight-width-whitespace portfolio-row">
+			<div class="col-sm-6">
+				<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
+					<img src="img/1.webp" alt="Identité visuelle journal local" class="img-responsive portfolio-thumb" height="40" width="40" />
+				</a>
+				<h3 class="mg-md text-center">
+					<em>Refonte d'un site web</em> pour un <em>journal local</em>
+				</h3>
+				<p class="text-center">
+					Nous avons créé une nouvelle <em>identité visuelle</em> pour un <em>journal lyonnais</em>.
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+					<img src="img/2.webp" class="img-responsive portfolio-thumb" alt="Création d'un site web pour photographes" height="40" width="40"/></a>
+				<h3 class="mg-md text-center">
+					<em>Création d'un site web</em> pour <em>photographes</em>
+				</h3>
+				<p class="text-center">
+					Nous avons conçu la <em>plateforme idéale</em> pour laisser place aux clichés des <em>photographes.</em>
+				</p>
+			</div>
+		</div>
+		<div class="row tight-width-whitespace portfolio-row">
+			<div class="col-sm-6">
+				<a href="#" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+					<img src="img/3.webp" class="img-responsive portfolio-thumb" alt="Création d'un site internet pour un voyageur" height="40" width="40"/>
+				</a>
+				<h3 class="mg-md text-center">
+					Création d'un <em>site internet pour un voyageur</em>
+				</h3>
+				<p class="text-center">
+					Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les <em>articles de voyageur</em>.
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+					<img src="img/4.webp" class="img-responsive portfolio-thumb" alt="Création d'un site web pour agence de mariage" height="40" width="40" />
+				</a>
+				<h3 class="mg-md text-center">
+					Conception d'un site pour une <em>agence de mariage</em>
+				</h3>
+				<p class="text-center">
+					Nous avons travaillé avec cette agence pour <em>créer un site internet</em> permettant la présentation détaillée de leurs prestations.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- bloc-4-portfolio END -->
+
+<!-- bloc-5-cta -->
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+	<div class="container bloc-lg">
+		<div class="row">
+			<h2 class="mg-md text-center tc-white">
+				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
+			</h2>
+			<div class="col-sm-12 text-center">
+				<a href="Contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- bloc-5-cta END -->
+
+<!-- Footer - bloc-8 -->
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text-center white">
+					Agence La Panthère - Agence web basée à Lyon.<br>
+					2 place Sathonay 69001 Lyon<br>
+					Ouvert de 9h à 18h du lundi au vendredi
+				</p>
+				<div class="row row-no-gutters social">
+					<div class="col-sm-3">
+						<div class="text-center">
+							<a class="social" href="#" aria-label="Twitter">
+								<span class="fa fa-twitter icon-md"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-center">
+							<a class="social" href="#" aria-label="Facebook">
+								<span class="fa fa-facebook icon-md"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-center">
+							<a class="social" href="#" aria-label="Dribble">
+								<span class="fa fa-dribbble icon-md"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-center">
+							<a class="social" href="#" aria-label="Instagram">
+								<span class="fa fa-instagram icon-md"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer - bloc-8 END -->
+</div>
+<!-- Principal conteneur END -->
 </body>
 </html>
